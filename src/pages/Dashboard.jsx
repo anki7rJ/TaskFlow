@@ -1,4 +1,4 @@
-import { useState  } from "react";
+import { useEffect, useState  } from "react";
 
 import TaskList from "../features/tasks/TaskList";
 import CreateTaskForm from "../features/tasks/CreateTaskForm";
@@ -9,10 +9,21 @@ import Modal from "../components/ui/Modal";
 
 
 export default function Dashboard() {
-  const [tasks, setTasks] = useState([
-    
-    
-  ]);
+  const [tasks, setTasks] = useState(()=>{
+    try {
+      const item = localStorage.getItem("taskflow_tasks")
+      return item ? JSON.parse(item) : []
+      
+    } catch (error) {
+      console.log("LocalStorage Parse Error" , error)
+      return []
+      
+    }
+  });
+  
+  useEffect(()=>{
+    localStorage.setItem('taskflow_tasks' , JSON.stringify(tasks))
+  },[tasks])
   
   const [isFormOpen, setFormOpen] = useState(false)
 
