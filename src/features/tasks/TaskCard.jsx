@@ -34,7 +34,12 @@ export default function TaskCard({ task , handleStatusChange }) {
         )}
 
         {task.status==="done" && (
+          <>
             <span className="text-sm font-medium text-green-600"> ✔ Completed </span>
+            <button onClick={()=>handleStatusChange(task.id ,"todo")} className="rounded bg-amber-500 px-2 py-1 text-sm text-white">Reopen</button>
+          </>
+            
+            
           )}
 
       </div>
