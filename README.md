@@ -1,16 +1,53 @@
-# React + Vite
+🗂️ TaskFlow — Task Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TaskFlow is a lightweight task management dashboard built with React, Vite, and Tailwind CSS.
+It allows users to create, track, and manage tasks across different states with a clean and intuitive UI.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  ✅ Create tasks with title and description
 
-## React Compiler
+  🔄 Move tasks between Todo, In Progress, and Done
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  ♻️ Reopen completed tasks
 
-## Expanding the ESLint configuration
+  📊 Task count per column
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  💾 Persistent storage using localStorage
+
+  🧩 Modular, feature-based folder structure
+
+  🖥️ Responsive dashboard layout
+
+  ♿ Keyboard-friendly form interactions
+
+  🧼 Clean UI with empty-state messaging
+  
+🛠️ Tech Stack
+
+  React (functional components & hooks)
+
+  Vite (fast development & build tool)
+
+  Tailwind CSS v4 (utility-first styling)
+
+  JavaScript (ES6+)
+
+  localStorage API
+
+📁 Project Structure
+<img width="751" height="430" alt="image" src="https://github.com/user-attachments/assets/d39788d6-0b61-493a-8ccd-a71d1d1d091f" />
+
+🚀 Getting Started
+
+  1️⃣ Clone the repository
+    git clone https://github.com/<your-username>/taskflow.git
+    cd taskflow
+    
+  2️⃣ Install dependencies
+    npm install
+
+  3️⃣ Start development server
+    npm run dev
+
+
