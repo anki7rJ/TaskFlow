@@ -35,8 +35,7 @@ It allows users to create, track, and manage tasks across different states with 
 
   localStorage API
 
-📁 Project Structure
-<img width="751" height="430" alt="image" src="https://github.com/user-attachments/assets/d39788d6-0b61-493a-8ccd-a71d1d1d091f" />
+
 
 🚀 Getting Started
 
